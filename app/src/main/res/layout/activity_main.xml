@@ -10,17 +10,60 @@
         android:id="@+id/emailsRv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/loadMoreBtn"
+        app:layout_constraintBottom_toTopOf="@id/SubmitBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/loadMoreBtn"
+        android:id="@+id/SubmitBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/emailsRv" />
+
+    <EditText
+        android:id="@+id/linkInput"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:autofillHints=""
+        android:hint="Ex:https://example.example/my-item-url"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailsRv" />
+
+    <EditText
+        android:id="@+id/itemInput"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:autofillHints=""
+        android:hint="Item Name"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="627dp" />
+
+    <EditText
+        android:id="@+id/itemCost"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="Ex: 5.99"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="627dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
