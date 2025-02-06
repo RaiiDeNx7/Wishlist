@@ -1,7 +1,7 @@
 package com.example.wishlist
 
-class Item(
-    val item: String,
-    val cost: String,
-    val link: String) {
-}
+data class Item(
+    var name: String,
+    var cost: String,
+    var url: String,
+)
