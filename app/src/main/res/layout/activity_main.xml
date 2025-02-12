@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
@@ -13,9 +14,25 @@
         android:id="@+id/wishlistRV"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/back"
         app:layout_constraintBottom_toTopOf="@id/SubmitBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wishlist"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,30 +50,31 @@
         android:id="@+id/linkInput"
         android:layout_width="250dp"
         android:layout_height="48dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="24dp"
         android:autofillHints=""
         android:hint="@string/ex_https_example_example_my_item_url"
         android:inputType="text"
-        android:textColor="@color/black"
-        android:textColorHint="@color/darkgrey"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wishlistRV" />
+        app:layout_constraintTop_toBottomOf="@+id/wishlistRV"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/itemInput"
         android:layout_width="100dp"
         android:layout_height="48dp"
-        android:layout_marginStart="25dp"
         android:autofillHints=""
         android:hint="@string/item_name"
         android:inputType="text"
-        android:textColor="@color/black"
-        android:textColorHint="@color/darkgrey"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/wishlistRV"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/linkInput"
+
+        app:layout_constraintStart_toStartOf="@+id/linkInput" />
 
     <EditText
         android:id="@+id/itemCost"
@@ -65,11 +83,13 @@
         android:autofillHints=""
         android:hint="@string/ex_5_99"
         android:inputType="text"
-        android:textColor="@color/black"
-        android:textColorHint="@color/darkgrey"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/SubmitBtn"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/SubmitBtn"
+        app:layout_constraintStart_toStartOf="@+id/SubmitBtn"
+        app:layout_constraintTop_toBottomOf="@+id/wishlistRV" />
 
 
 
