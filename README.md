@@ -4,7 +4,7 @@ Submitted by: **Hunter Smith**
 
 **Wishlist** is a wishlist app that helps the user keep track of what they want to buy.
 
-Time spent: **4** hours spent in total
+Time spent: **5** hours spent in total
 
 ## Required Features
 
@@ -27,7 +27,10 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/inqQXOT.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/01dquuN.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+--> High-Res Version of Gif [Imgur](https://i.imgur.com/VZX8ReJ.gif)
+
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
